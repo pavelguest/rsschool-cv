@@ -2,25 +2,37 @@ body {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  border: solid #5B6DCD 5px;
-  padding: 5px;
+  background: #fdfdfd;
   max-width: 1024px;
-  font-family: Arial, serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  background:border-box teal;
+  line-height: 1.6;
+  color: #333;
+}
+h1, h2 {
+  margin: 0:
 }
 img {
   display: block;
-  margin: 10px;
+  margin: 33px;
   border-radius: 10%;
   float: left;
 }
 .social {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
   text-align: center;
-  border: 0px solid white;
-  padding: 1px;
-  background: white;
+  border-bottom: solid 2px black;
+  font-size: 30px;
+  padding: 60px;
+  margin: 0px auto;
+  background-color: #2451af;
+}
+.career {
+
 }
 .contact-info {
-  text-align: center;
+  text-align: right;
 }
