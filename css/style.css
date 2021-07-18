@@ -30,7 +30,7 @@ body {
 }
 .header .header__photo {
   width: 100%;
-  background-color: blue;
+  background-color: rgb(29, 42, 77);
   align-items: center;
   position: relative;
   border-bottom: 1px solid black;
@@ -94,6 +94,6 @@ body {
 .footer__content1 {
   font-size: 25px;
   text-align: center;
-  background-color: blue;
+  background-color: rgb(29, 42, 77);
   color: white;
   }
