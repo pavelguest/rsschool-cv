@@ -8,6 +8,11 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
+a {
+  color:inherit;
+  text-decoration: none;
+  outline: none;
+}
 .header {
   width: 100%;
 }
@@ -19,11 +24,11 @@ body {
   border-bottom: 2px solid black;
 }
 .header img {
-  width: 180px;
-  height: 240px;
+  max-width: 180px;
+  max-height: 240px;
   position: absolute;
   top: 50px;
-  left: 70px;
+  left: 20px;
 }
 .header__text {
   color:white;
@@ -41,6 +46,43 @@ body {
   margin: 0;
   padding: 0;
  }
+ .header-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: white;
+
+}
+.header-list li {
+  list-style: none;
+  display: inline-block;
+}
+.header-list__item {
+  padding: 5px 5px;
+}
+.link:hover {
+  cursor: pointer;
+  color:var(--font-gold)
+}
+.link:active {
+  color:var(--font-gold)
+}
+input[type="checkbox"] {
+  display: none;
+}
+nav label {
+  display: none;
+  border: 1px solid #fff;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+nav label:hover{
+  color: #f00;
+  border: 1px solid #f00;
+}
  h2 {
   font-size: 20px;
   margin: 0;
@@ -58,6 +100,7 @@ body {
  p, ul {
   margin: 0;
   }
+
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -97,7 +140,7 @@ body {
   border-top: 3px solid black;
 }
 .code img {
-  width: 535px;
+  max-width: 535px;
   height: 160px;
 }
 .footer {
@@ -110,4 +153,155 @@ body {
 .footer__content img {
   width: 100px;
   height: 50px;
+}
+@media screen and (max-width: 860px) {
+  .header img {
+    max-width: 160px;
+    max-height: 220px;
+    top: 20px;
+    left: 20px;
+  }
+  .header__text {
+    width: 70%;
+  }
+  .header__text h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+  .header__text h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+   }
+   .content {
+     flex-direction: column-reverse;
+   }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+   .left__content {
+    width: 100%;
+  }
+  .right__content {
+    width: 100%;
+  }
+  .left__content .skills {
+    margin-top: 90px;
+    border-top: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header img {
+    max-width: 140px;
+    max-height: 200px;
+    top: 10px;
+    left: 10px;
+  }
+  .header__text {
+    width: 75%;
+  }
+  .header__text h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+  .header__text h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+   }
+  nav label{
+    display: inline-block;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+}
+  .header__menu > ul {
+    display: none;
+}
+  input[type="checkbox"]:checked ~ label + ul {
+    display: block;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex-direction: column;
+
+}
+  }
+@media screen and (max-width: 660px) {
+    .header img {
+      max-width: 100px;
+      max-height: 160px;
+      top: 10px;
+      left: 10px;
+    }
+    .header__text {
+      width: 75%;
+    }
+    .header__text h1 {
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+    .header__text h3 {
+      font-size: 15px;
+      text-transform: uppercase;
+     }
+     nav label{
+      top: 30px;
+      right: 10px;
+  }
+  }
+  @media screen and (max-width: 500px) {
+    .header img {
+      max-width: 100px;
+      max-height: 160px;
+      top: 10px;
+      left: 10px;
+    }
+    .header__text {
+      width: 72%;
+    }
+    .header__text h1 {
+      font-size: 25px;
+      text-transform: uppercase;
+    }
+    .header__text h3 {
+      font-size: 10px;
+      text-transform: uppercase;
+     }
+     nav label{
+      top: 15px;
+      right: 10px;
+  }
+  }
+  @media screen and (max-width: 450px) {
+    .header img {
+      max-width: 100px;
+      max-height: 160px;
+      top: 10px;
+      left: 10px;
+    }
+    .header__text {
+      width: 70%;
+    }
+    .header__text h1 {
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+    .header__text h3 {
+      font-size: 10px;
+      text-transform: uppercase;
+     }
+     nav label{
+      top: 10px;
+      right: 10px;
+  }
+  }
+  @media screen and (max-width: 400px) {
+    .header img {
+      display: none;
+    }
+    .header__text {
+      width: 95%;
+    }
+  }
 }

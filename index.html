@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
   <header class="header">
@@ -19,6 +22,30 @@
         <h1>Pavel Puchinski</h1>
         <h3>Junior JS/frontend developer</h3>
       </div>
+      <nav class="header__menu">
+        <input type="checkbox" name="menu" id="btn-menu" />
+        <label for="btn-menu">menu</label>
+        <ul class="header-list">
+          <li class="header-list__item">
+            <a href="#visiting" class="link">contact</a>
+          </li>
+          <li class="header-list__item">
+            <a href="#explore" class="link">experience</a>
+          </li>
+          <li class="header-list__item">
+            <a href="#video" class="link">education</a>
+          </li>
+          <li class="header-list__item">
+            <a href="#tickets" class="link">english</a>
+          </li>
+          <li class="header-list__item">
+            <a href="#contacts" class="link">summary</a>
+          </li>
+          <li class="header-list__item">
+            <a href="#contacts" class="link">code</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
   <main class="content">
@@ -69,9 +96,13 @@
       </div>
       <div class="code__examples">
         <h2>Code Examples:</h2>
-        <div class="code">
-          <img src="./images/codewars.PNG" alt="codewars">
-        </div>
+        <pre><code class="html">function sumTriangularNumbers(n) {
+          let sum = 0;
+          for (let i = 1; i <= n; i++) {
+            sum += (i * (i + 1) / 2);
+          }
+          return sum;
+        }</code></pre>
       </div>
       </section>
     </main>
