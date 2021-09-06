@@ -33,16 +33,16 @@ function likes(names) {
 ___
 
 ## Experience:
-_The Rolling Scopes - for now_</p>
-_Finished stage0 course:_</p>
-1. [museum](https://rolling-scopes-school.github.io/pavelguest-JSFEPRESCHOOL/museum/)
-2. [vertical-slider](https://rolling-scopes-school.github.io/pavelguest-JSFEPRESCHOOL/vertical-slider/)
-3. [custom-video-player](https://rolling-scopes-school.github.io/pavelguest-JSFEPRESCHOOL/custom-video-player/)
+_The Rolling Scopes - for now_<br/>
+_Finished stage0 course:_<br/>
+* [museum](https://rolling-scopes-school.github.io/pavelguest-JSFEPRESCHOOL/museum/)
+* [vertical-slider](https://rolling-scopes-school.github.io/pavelguest-JSFEPRESCHOOL/vertical-slider/)
+* [custom-video-player](https://rolling-scopes-school.github.io/pavelguest-JSFEPRESCHOOL/custom-video-player/)
 
 ___
 
 ## Education:
-Belarusian State Unevirsity of Informatic and Radioelectronics</p>
+Belarusian State Unevirsity of Informatic and Radioelectronics<br/>
 Spetialicy: _Information technology and management in technical systems_
 
 ___
