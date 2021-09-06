@@ -11,7 +11,7 @@ ___
 ## Skills:
 1. Programming languages: HTML5, CSS3, JavaScript(in progress)
 2. Frameworks: in progress
-3. Tools: GIT, Adobe Photoshop, VS Code
+3. Tools: GIT, Adobe Photoshop, Figma, VS Code
 ___
 ## Code examples:
 ```javascript
@@ -25,7 +25,11 @@ function likes(names) {
 ```
 ___
 ## Experience:
-_The Rolling Scopes - for now_
+_The Rolling Scopes - for now_</p>
+_Finished stage0 course:_</p>
+1. [museum](https://rolling-scopes-school.github.io/pavelguest-JSFEPRESCHOOL/museum/)
+2. [vertical-slider](https://rolling-scopes-school.github.io/pavelguest-JSFEPRESCHOOL/vertical-slider/)
+3. [custom-video-player](https://rolling-scopes-school.github.io/pavelguest-JSFEPRESCHOOL/custom-video-player/)
 ___
 ## Education:
 Belarusian State Unevirsity of Informatic and Radioelectronics</p>
