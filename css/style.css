@@ -1,45 +1,33 @@
 body {
-  margin: 0 auto;
-  padding: 0;
   box-sizing: border-box;
   background: white;
+  margin: 0 auto;
+  padding: 0;
   max-width: 1024px;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.6;
 }
-.content {
-  display: flex;
-  flex-wrap: wrap;
- }
- h1 {
-  margin-bottom: 0;
-  padding-top: 20px;
- }
- h2 {
-  font-size: 25px;
-  text-transform: uppercase;
-  margin: 0;
- }
- p, ul {
- margin: 0;
- }
+a {
+  color:inherit;
+  text-decoration: none;
+  outline: none;
+}
 .header {
   width: 100%;
-  margin: 20px auto;
 }
 .header .header__photo {
   width: 100%;
-  background-color: blue;
+  background-color: rgb(29, 42, 77);
   align-items: center;
   position: relative;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
 }
 .header img {
-  width: 170px;
-  height: 260px;
+  width: 180px;
+  height: 240px;
   position: absolute;
-  top: 100px;
+  top: 50px;
   left: 70px;
 }
 .header__text {
@@ -48,15 +36,44 @@ body {
   margin-left: auto;
 }
 .header__text h1 {
+  margin: 0;
   font-size: 60px;
   text-transform: uppercase;
 }
+.header__text h3 {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+ }
+ h2 {
+  font-size: 20px;
+  margin: 0;
+  text-transform: uppercase;
+ }
+ h4 {
+  font-size: 25px;
+  text-align: center;
+  background-color: rgb(29, 42, 77);
+  color: white;
+  border-top: 2px solid black;
+  margin: 0;
+  padding: 0;
+ }
+ p, ul {
+  margin: 0;
+  }
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+ }
 .left__content {
   width: 40%;
 }
 .left__content .skills {
   margin: 30px;
-  margin-top: 170px;
+  margin-top: 165px;
   padding: 0 10px;
   border-top: 3px solid black;
 }
@@ -65,11 +82,19 @@ body {
   padding: 0 10px;
   border-top: 3px solid black;
 }
+.finished-task a {
+  animation: color-change 2s infinite;
+}
+@keyframes color-change {
+  0% { color: red; }
+  50% { color: blue; }
+  100% { color: red; }
+}
 .right__content {
   width: 60%;
 }
 .right__content .contact {
-  margin: 0 30px;
+  margin: 3px 30px;
   padding:0 10px;
 }
 .right__content .summary, .code__examples {
@@ -77,8 +102,9 @@ body {
   padding:0 10px;
   border-top: 3px solid black;
 }
-.code {
-  font-size: 10px;
+.code img {
+  width: 535px;
+  height: 160px;
 }
 .footer {
   display: flex;
@@ -91,9 +117,3 @@ body {
   width: 100px;
   height: 50px;
 }
-.footer__content1 {
-  font-size: 25px;
-  text-align: center;
-  background-color: blue;
-  color: white;
-  }
