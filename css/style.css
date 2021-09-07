@@ -220,10 +220,15 @@ nav label:hover{
 }
   input[type="checkbox"]:checked ~ label + ul {
     display: block;
+    position: absolute;
     display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  flex-direction: column;
+    flex-wrap: wrap;
+    right: 0px;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-color: #1d2a4d;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
 
 }
   }
@@ -231,8 +236,8 @@ nav label:hover{
     .header img {
       max-width: 100px;
       max-height: 160px;
-      top: 10px;
-      left: 10px;
+      top: 85px;
+      left: 30px;
     }
     .header__text {
       width: 75%;
@@ -249,13 +254,14 @@ nav label:hover{
       top: 30px;
       right: 10px;
   }
+
   }
   @media screen and (max-width: 500px) {
     .header img {
       max-width: 100px;
       max-height: 160px;
-      top: 10px;
-      left: 10px;
+      top: 65px;
+      left: 30px;
     }
     .header__text {
       width: 72%;
@@ -277,11 +283,11 @@ nav label:hover{
     .header img {
       max-width: 100px;
       max-height: 160px;
-      top: 10px;
-      left: 10px;
+      position: static;
+      padding: 10px 10px 10px 10px;
     }
-    .header__text {
-      width: 70%;
+    .header__photo {
+      display: flex;
     }
     .header__text h1 {
       font-size: 20px;
@@ -292,14 +298,15 @@ nav label:hover{
       text-transform: uppercase;
      }
      nav label{
-      top: 10px;
+      top: 110px;
       right: 10px;
+  }
+    .contact {
+      align-items: flex-start;
   }
   }
   @media screen and (max-width: 400px) {
-    .header img {
-      display: none;
-    }
+
     .header__text {
       width: 95%;
     }
