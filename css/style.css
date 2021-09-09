@@ -45,7 +45,7 @@ body._lock {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  background-color: #fff;
+  background: url("../assets/images/background.png");
 }
 /*---------------------*/
 /*---------------------*/
@@ -89,6 +89,7 @@ body._lock {
   height: 100%;
   border-width: 0;
   outline-width: 0;
+  border: none;
 }
 .page__sub-title {
   font-size: 20px;
@@ -165,18 +166,16 @@ body._lock {
 }
 .header-container {
   display: flex;
-  padding: 0 30px;
   align-items: center;
-  justify-content: space-between;
-  min-height: 100px;
+  padding: 0 30px;
+  min-height: 120px;
 }
 .header__logo {
   border-radius: 10%;
   position: absolute;
-  top: 10px;
+  top: 50px;
 }
 .header__title-item {
-  width: 50%;
   margin-left: auto;
 }
 .header__title {
@@ -187,15 +186,24 @@ body._lock {
   font-size: 20px;
   text-transform: uppercase;
 }
-.header__menu {}
+.header__menu {
+  display: flex;
+  justify-content: flex-end;
+}
 .menu {}
-.menu__icon {}
+.menu__icon {
+  margin-top: 15px;
+  margin-right: 15px;
+}
 .menu__body {}
-.menu__list {}
+.menu__list {
+  justify-content: space-between;
+}
 .menu__list > li {
-  margin: 0 0 0 20px;
+  margin: 5px 10px;
 }
 .menu__link {
+
   color: #fff;
   font-size: 20px;
 }
@@ -210,8 +218,11 @@ body._lock {
   }
 }
 @media (max-width: 767px) {
+  .header__logo {
+    top: 170px;
+  }
   .header__title-item {
-    width: 70%;
+    margin: 0 auto;
   }
   .page {
     flex-direction: column-reverse;
@@ -233,7 +244,7 @@ body._lock {
     border: none;
   }
   .menu__icon {
-    z-index: 5;
+    z-index: 6;
     display: block;
     position: relative;
     width: 30px;
@@ -279,12 +290,13 @@ body._lock {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 60%;
-    height: 30%;
+    width: 65%;
+    height: 50%;
     background-color: rgba(0, 0, 0, 0.9);
     padding: 120px 30px 30px 30px;
     transition: left 0.3s ease 0s;
     overflow: auto;
+    z-index: 5;
   }
   .menu__body._active {
     right: 0;
@@ -304,16 +316,15 @@ body._lock {
 }
 @media (max-width: 630px) {
   .header__logo {
-    top: 100px;
+    top: 170px;
   }
   .header__title-item {
-    width: 100%;
     padding: 0 5px 0 0;
   }
 }
 @media (max-width: 480px) {
   .header__logo {
-    top: 130px;
+    top: 170px;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -323,14 +334,18 @@ body._lock {
     padding: 190px 0 0 0;
     align-items: center;
   }
-}
-@media (max-width: 350px) {
   .header__title {
     font-size: 30px;
-    text-transform: uppercase;
   }
   .header__subtitle {
     font-size: 16px;
-    text-transform: uppercase;
+  }
+}
+@media (max-width: 355px) {
+  .header__title {
+    text-transform: capitalize;
+  }
+  .header__subtitle {
+    text-transform: capitalize;
   }
 }

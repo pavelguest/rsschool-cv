@@ -4,18 +4,35 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+  <link rel="stylesheet" href="css/style.css">
   <title>CV Pavel Puchinski</title>
 </head>
 <body>
   <div class="wrapper">
     <header class="header">
+      <div class="header__menu menu">
+        <div class="menu__icon">
+          <span></span>
+        </div>
+        <nav class="menu__body">
+          <ul class="menu__list">
+            <li><a data-goto=".contact" href="#right-section" class="menu__link">contacts</a></li>
+            <li><a data-goto=".summary" href="#left-section" class="menu__link">summary</a></li>
+            <li><a data-goto=".video-cv" href="#left-section" class="menu__link">video</a></li>
+            <li><a data-goto=".code-examples" href="#left-section" class="menu__link">code</a></li>
+            <li><a data-goto=".skills" href="#left-section" class="menu__link">skills</a></li>
+            <li><a data-goto=".experience" href="#left-section" class="menu__link">experience</a></li>
+            <li><a data-goto=".education" href="#left-section" class="menu__link">education</a></li>
+          </ul>
+        </nav>
+      </div>
       <div class="header-container">
         <figure>
           <img src="assets/images/image-cv.png" alt="logo" class="header__logo" width="135" height="180">
@@ -23,17 +40,6 @@
         <div class="header__title-item">
           <h1 class="header__title">Pavel Puchinski</h1>
           <h3 class="header__subtitle">Junior JS/frontend developer</h3>
-        </div>
-        <div class="header__menu menu">
-          <div class="menu__icon">
-            <span></span>
-          </div>
-          <nav class="menu__body">
-            <ul class="menu__list">
-              <li><a data-goto=".skills" href="#right-section" class="menu__link">skills</a></li>
-              <li><a data-goto=".experience" href="#left-section" class="menu__link">experience</a></li>
-            </ul>
-          </nav>
         </div>
       </div>
     </header>
@@ -87,6 +93,12 @@
         I am really interested in web development and everything related to it.
         I am ready to move only forward and study this profession. I am looking for a company willing to offer me a place among their developers.</p>
         </div>
+        <div class="video section">
+          <h2 class="page__sub-title">Video Summary:</h2>
+          <div class="video-cv">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yJcCKuxfb2o" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
         <div class="code-examples section">
           <h2 class="page__sub-title">Code Examples:</h2>
           <pre><code class="language-javascript">function sumTriangularNumbers(n) {
@@ -96,16 +108,6 @@
             }
             return sum;
           }</code></pre>
-        </div>
-        <div class="video-cv section">
-          <h2 class="page__sub-title">Video Summary:</h2>
-          <iframe width="560" height="315"
-            src="https://www.youtube.com/embed/yJcCKuxfb2o"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
         </div>
       </section>
     </main>
