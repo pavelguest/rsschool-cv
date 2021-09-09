@@ -1,119 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pavel Puchinski CV</title>
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="/rsschool-cv/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <title>CV Pavel Puchinski</title>
 </head>
 <body>
-  <header class="header">
-    <div class="header__photo">
-      <img src="images/image-cv.png" alt="my photo">
-      <div class="header__text">
-        <h1>Pavel Puchinski</h1>
-        <h3>Junior JS/frontend developer</h3>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-container">
+        <figure>
+          <img src="assets/images/image-cv.png" alt="logo" class="header__logo" width="135" height="180">
+        </figure>
+        <div class="header__title-item">
+          <h1 class="header__title">Pavel Puchinski</h1>
+          <h3 class="header__subtitle">Junior JS/frontend developer</h3>
+        </div>
+        <div class="header__menu menu">
+          <div class="menu__icon">
+            <span></span>
+          </div>
+          <nav class="menu__body">
+            <ul class="menu__list">
+              <li><a data-goto=".skills" href="#right-section" class="menu__link">skills</a></li>
+              <li><a data-goto=".experience" href="#left-section" class="menu__link">experience</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <nav class="header__menu">
-        <input type="checkbox" name="menu" id="btn-menu" />
-        <label for="btn-menu">menu</label>
-        <ul class="header-list">
-          <li class="header-list__item">
-            <a href="#visiting" class="link">contact</a>
-          </li>
-          <li class="header-list__item">
-            <a href="#explore" class="link">experience</a>
-          </li>
-          <li class="header-list__item">
-            <a href="#video" class="link">education</a>
-          </li>
-          <li class="header-list__item">
-            <a href="#tickets" class="link">english</a>
-          </li>
-          <li class="header-list__item">
-            <a href="#contacts" class="link">summary</a>
-          </li>
-          <li class="header-list__item">
-            <a href="#contacts" class="link">code</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main class="content">
-    <section class="left__content">
-      <div class="skills">
-        <h2>Skills:</h2>
-        <ul>
-          <li>Programming languages: HTML5, CSS3, JavaScript (in progress)</li>
-          <li>Frameworks: in progress</li>
-          <li>Tools: GIT, Adobe Photoshop, Figma, VS Code</li>
-        </ul>
-      </div>
-      <div class="experience">
-        <h2>Experience:</h2>
-        <p><i>The Rolling Scopes - for now</i></p>
-        <p>Finished stage0 course:</p>
-        <ul class="finished-task">
-          <li><a href="https://rolling-scopes-school.github.io/pavelguest-JSFEPRESCHOOL/museum/">museum</a></li>
-          <li><a href="https://rolling-scopes-school.github.io/pavelguest-JSFEPRESCHOOL/vertical-slider/">vertical-slider</a></li>
-          <li><a href="https://rolling-scopes-school.github.io/pavelguest-JSFEPRESCHOOL/custom-video-player/">custom-video-player</a></li>
-        </ul>
-      </div>
-      <div class="education">
-        <h2>Education:</h2>
-        <p>Belarusian State Unevirsity of Informatic and Radioelectronics</p>
-        <p>Spetialicy: <i>Information technology and management in technical systems</i> </p>
-      </div>
-      <div class="english">
-        <h2>English:</h2>
-        <p>Elementary</p>
-      </div>
-    </section>
-    <section class="right__content">
-      <div class="contact">
-        <h2>Contact Information:</h2>
-        <ul>
-          <li>Minsk, Belarus</li>
-          <li>Phone: +375336905811</li>
-          <li>email: pavelguest@yandex.ru</li>
-          <li>Telegram: @pavelguest</li>
-        </ul>
-      </div>
-      <div class="summary">
-      <h2>Summary:</h2>
-      <p>I recently started to get involved in web programming, started with courses at rs-school.
-      I am really interested in web development and everything related to it.
-      I am ready to move only forward and study this profession. I am looking for a company willing to offer me a place among their developers.</p>
-      </div>
-      <div class="code__examples">
-        <h2>Code Examples:</h2>
-        <pre><code class="html">function sumTriangularNumbers(n) {
-          let sum = 0;
-          for (let i = 1; i <= n; i++) {
-            sum += (i * (i + 1) / 2);
-          }
-          return sum;
-        }</code></pre>
-      </div>
+    </header>
+    <main class="page">
+      <section class="page__section left-section">
+        <div class="skills section">
+          <h2 class="page__sub-title">Skills:</h2>
+          <ul class="page__list">
+            <li>Programming languages: HTML5, CSS3, JavaScript (in progress)</li>
+            <li>Frameworks: in progress</li>
+            <li>Tools: GIT, Adobe Photoshop, Figma, VS Code</li>
+          </ul>
+        </div>
+        <div class="experience section">
+          <h2 class="page__sub-title">Experience:</h2>
+          <p class="page__text"><i>The Rolling Scopes - for now</i></p>
+          <p>Finished stage0 course:</p>
+          <a class="page__certificate" target=»_blank href="https://app.rs.school/certificate/ja2h8s91">certificate stage0</a>
+          <ul class="page__works">
+            <li><a class="link" target=»_blank href="https://rolling-scopes-school.github.io/pavelguest-JSFEPRESCHOOL/museum/">
+              <img src="./assets/images/museum.PNG" alt="museum"></a></li>
+            <li><a class="link" target=»_blank href="https://rolling-scopes-school.github.io/pavelguest-JSFEPRESCHOOL/vertical-slider/">
+              <img src="./assets/images/vertical-slider.PNG" alt="vertical slider"></a></li>
+            <li><a class="link" target=»_blank href="https://rolling-scopes-school.github.io/pavelguest-JSFEPRESCHOOL/custom-video-player/">
+              <img src="./assets/images/custom-video-player.PNG" alt="custom video player"></a></li>
+          </ul>
+        </div>
+        <div class="education section">
+          <h2 class="page__sub-title">Education:</h2>
+          <p class="page__text">Belarusian State Unevirsity of Informatic and Radioelectronics</p>
+          <p class="page__text">Spetialicy: <i>Information technology and management in technical systems</i> </p>
+        </div>
+        <div class="english section">
+          <h2 class="page__sub-title">English:</h2>
+          <p class="page__text">Elementary</p>
+        </div>
+      </section>
+      <section class="page__section right-section">
+        <div class="contact section">
+          <h2 class="page__sub-title">Contact Information:</h2>
+          <ul class="page__list">
+            <li>Minsk, Belarus</li>
+            <li>Phone: +375336905811</li>
+            <li>email: pavelguest@yandex.ru</li>
+            <li>Telegram: @pavelguest</li>
+          </ul>
+        </div>
+        <div class="summary section">
+        <h2 class="page__sub-title">Summary:</h2>
+        <p class="page__text">I recently started to get involved in web programming, started with courses at rs-school.
+        I am really interested in web development and everything related to it.
+        I am ready to move only forward and study this profession. I am looking for a company willing to offer me a place among their developers.</p>
+        </div>
+        <div class="code-examples section">
+          <h2 class="page__sub-title">Code Examples:</h2>
+          <pre><code class="language-javascript">function sumTriangularNumbers(n) {
+            let sum = 0;
+            for (let i = 1; i <= n; i++) {
+              sum += (i * (i + 1) / 2);
+            }
+            return sum;
+          }</code></pre>
+        </div>
+        <div class="video-sv section">
+          <h2 class="page__sub-title">Video Summary:</h2>
+          <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/yJcCKuxfb2o"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
       </section>
     </main>
-  <footer>
-    <div class="footer">
-      <div class="footer__content">
-      <a href="https://github.com/pavelguest"><img src="/rsschool-cv/images/GitHub_Logo.png" alt="github"></a>
-      <a href="https://rs.school/js/"><img src="/rsschool-cv/images/rs_school_js.svg" alt="rsschool"></a>
-      </div>
-    </div>
-      <h4>2021</h4>
-  </footer>
+    <footer class="footer">
+        <div class="footer__content">
+        <a class="footer__link" target=»_blank href="https://github.com/pavelguest"><img src="/rsschool-cv//assets/images/GitHub_Logo.png" alt="github"></a>
+        <a class="footer__link" target=»_blank href="https://rs.school/js/"><img src="/rsschool-cv//assets/images/rs_school_js.svg" alt="rsschool"></a>
+        </div>
+        <h5 class="footer__sub-title">&copy; Pavel Puchinski<br><time>2021</time></h5>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
