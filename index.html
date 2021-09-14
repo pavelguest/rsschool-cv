@@ -8,10 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+  <link rel="stylesheet" href="./css/paraiso-dark.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="./js/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   <title>CV Pavel Puchinski</title>
 </head>
 <body>
@@ -59,11 +59,21 @@
           <p>Finished stage0 course:</p>
           <a class="page__certificate" target=»_blank href="https://app.rs.school/certificate/ja2h8s91">certificate stage0</a>
           <ul class="page__works">
-            <li><a class="link" target=»_blank href="https://rolling-scopes-school.github.io/pavelguest-JSFEPRESCHOOL/museum/">
+            <li>
+              <h6 class="page__title-tasks">Museum</h6>
+              <p class="page__text-tasks">Task - To typeset the landing page of the Louvre - one of the most popular art museums in the world.</p>
+              <a class="link" target=»_blank href="https://rolling-scopes-school.github.io/pavelguest-JSFEPRESCHOOL/museum/">
               <img src="./assets/images/museum.PNG" alt="museum"></a></li>
-            <li><a class="link" target=»_blank href="https://rolling-scopes-school.github.io/pavelguest-JSFEPRESCHOOL/vertical-slider/">
+            <li>
+              <h6 class="page__title-tasks">Vertical slider</h6>
+              <p class="page__text-tasks">JavaScript vertical slider.</p>
+              <a class="link" target=»_blank href="https://rolling-scopes-school.github.io/pavelguest-JSFEPRESCHOOL/vertical-slider/">
               <img src="./assets/images/vertical-slider.PNG" alt="vertical slider"></a></li>
-            <li><a class="link" target=»_blank href="https://rolling-scopes-school.github.io/pavelguest-JSFEPRESCHOOL/custom-video-player/">
+            <li>
+              <h6 class="page__title-tasks">Custom video player</h6>
+              <p class="page__text-tasks">
+                Custom HTML5 Video Player is a video player that is executed in accordance with the designer's intention and the appearance of which does not depend on the browser or device used.</p>
+              <a class="link" target=»_blank href="https://rolling-scopes-school.github.io/pavelguest-JSFEPRESCHOOL/custom-video-player/">
               <img src="./assets/images/custom-video-player.PNG" alt="custom video player"></a></li>
           </ul>
         </div>
@@ -101,13 +111,15 @@
         </div>
         <div class="code-examples section">
           <h2 class="page__sub-title">Code Examples:</h2>
-          <pre><code class="language-javascript">function sumTriangularNumbers(n) {
-            let sum = 0;
-            for (let i = 1; i <= n; i++) {
+          <pre><code class="language-javascript">
+            function sumTriangularNumbers(n) {
+              let sum = 0;
+              for (let i = 1; i <= n; i++) {
               sum += (i * (i + 1) / 2);
+              }
+              return sum;
             }
-            return sum;
-          }</code></pre>
+          </code></pre>
         </div>
       </section>
     </main>
