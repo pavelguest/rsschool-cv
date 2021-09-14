@@ -91,6 +91,22 @@ body._lock {
   outline-width: 0;
   border: none;
 }
+pre {
+  width: 100%;
+	overflow: auto;
+	overflow-y: hidden;
+	font-size: 14px;
+	line-height: 20px;
+
+}
+pre code {
+  text-align: left;
+  left: 0;
+  margin: 0;
+  padding: 0;
+
+}
+
 .page__sub-title {
   font-size: 20px;
   margin: 0 0 20px 0;
@@ -98,6 +114,14 @@ body._lock {
 }
 .page__text {
   line-height: 150%;
+}
+.page__title-tasks {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+.page__text-tasks {
+  line-height: 120%;
+  margin: 0 0 10px 0;
 }
 .page__works {
   display: flex;
