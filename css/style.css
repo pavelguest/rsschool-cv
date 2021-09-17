@@ -315,7 +315,7 @@ pre code {
     top: 0;
     right: -100%;
     width: 65%;
-    height: 50%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     padding: 120px 30px 30px 30px;
     transition: left 0.3s ease 0s;
