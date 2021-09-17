@@ -100,13 +100,14 @@ pre {
 
 }
 pre code {
-  text-align: left;
   left: 0;
   margin: 0;
   padding: 0;
-
 }
-
+code, pre, pre code {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
 .page__sub-title {
   font-size: 20px;
   margin: 0 0 20px 0;
@@ -371,5 +372,8 @@ pre code {
   }
   .header__subtitle {
     text-transform: capitalize;
+  }
+  pre {
+    font-size: 13px;
   }
 }
